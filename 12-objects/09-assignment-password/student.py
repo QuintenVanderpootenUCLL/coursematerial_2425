@@ -5,5 +5,6 @@ class Password:
     def verify(self, string):
         return self.__password == string
 
-
-        
+password = Password('azer1234')
+print(password.verify('qwer1234'))
+print(password.verify('azer1234'))
