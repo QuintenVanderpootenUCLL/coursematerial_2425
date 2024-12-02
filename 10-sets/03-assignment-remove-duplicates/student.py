@@ -1,8 +1,10 @@
 def remove_duplicates(xs):
-    gezien  = set()
-    unique_list = []
+    gezien =  set()
+    nieuwe_lijst = []
     for char in xs:
         if char not in gezien:
-            unique_list.append(char)
             gezien.add(char)
-    return unique_list
+            nieuwe_lijst.append(char)
+    return nieuwe_lijst
+
+print(remove_duplicates([1 , 2, 5 , 5 ,6 , 7 ,8]))

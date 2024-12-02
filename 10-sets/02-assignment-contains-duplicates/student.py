@@ -1,3 +1,8 @@
 def contains_duplicates(xs):
-    unique_list = list(set(xs))
-    return not(unique_list == xs)
+    gezien = set()
+    for char in xs:
+        if char in gezien:
+            return True
+        else:
+            gezien.add(char)
+    return False
